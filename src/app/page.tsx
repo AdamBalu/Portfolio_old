@@ -10,7 +10,7 @@ const Page = async () => (
 		<Header />
 		<main className="flex flex-col flex-grow pb-20 mt-10">
 			<div>
-				<div className="flex flex-col lg:mx-12 md:justify-around gap-10 md:flex-row h-screen mt-[15%]">
+				<div className="flex flex-col lg:mx-12 md:justify-around gap-10 md:flex-row h-screen mt-[8%]">
 					{/*<Banner />*/}
 					<MainHeading />
 				</div>

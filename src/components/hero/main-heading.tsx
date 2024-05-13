@@ -8,6 +8,10 @@ export const MainHeading = () => {
 	useEffect(() => dynamicHeadingsOpacity());
 	return (
 		<div className="flex flex-col gap-4 items-center" id="main-heading">
+			<div className="text-2xl text-slate-300 italic">Hi... I am</div>
+			<div className="text-9xl text-slate-700">
+				<span className="text-primary">Adam Balu</span>šeskul
+			</div>
 			<HeadingLine
 				spanText="web"
 				normalText=" developer"
@@ -15,8 +19,8 @@ export const MainHeading = () => {
 				id="h-webdev"
 			/>
 			<HeadingLine
-				spanText="designer"
-				normalText=""
+				spanText="design"
+				normalText="er"
 				margin="mr-[-10px] sm:mr-[-25px]"
 				id="h-designer"
 			/>
@@ -36,8 +40,8 @@ const dynamicHeadingsOpacity = () => {
 	const h3 = document.getElementById('h-mobile');
 
 	changeColor(h1, 1000);
-	changeColor(h2, 2000);
-	changeColor(h3, 3000);
+	changeColor(h2, 3000);
+	changeColor(h3, 2000);
 };
 
 const changeColor = (h: HTMLElement | null, timeout: number) => {
