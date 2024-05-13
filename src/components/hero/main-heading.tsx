@@ -11,19 +11,19 @@ export const MainHeading = () => {
 			<HeadingLine
 				spanText="web"
 				normalText=" developer"
-				margin="ml-[-65px]"
+				margin="ml-[-25px] sm:ml-[-65px]"
 				id="h-webdev"
 			/>
 			<HeadingLine
 				spanText="designer"
 				normalText=""
-				margin="mr-[-25px]"
+				margin="mr-[-10px] sm:mr-[-25px]"
 				id="h-designer"
 			/>
 			<HeadingLine
 				spanText="mobile app"
 				normalText=" creator"
-				margin="ml-[-25px]"
+				margin="ml-[-10px] sm:ml-[-25px]"
 				id="h-mobile"
 			/>
 		</div>

@@ -28,8 +28,8 @@ export const ProjectsBox = () => {
 						</div>
 					}
 					heading="Detox Rank"
-					bg="bg-cyan-800"
-					borderOnHover="group-hover:border-cyan-200"
+					bg="bg-[#1D4C81]"
+					borderOnHover="group-hover:border-[#b5d8ff]"
 					onClick={() => scrollToSection('section-detox-rank')}
 				>
 					Mobile application for overcoming dopamine addiction

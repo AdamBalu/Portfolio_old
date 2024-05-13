@@ -22,7 +22,8 @@ module.exports = {
         center: true
       },
       fontFamily: {
-        sarpanch: ["Sarpanch", "sans-serif"]
+        sigmarOne: ["Sigmar One", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"],
       },
       keyframes: {
         slidein: {

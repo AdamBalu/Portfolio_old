@@ -16,10 +16,12 @@ export const MoveDownHeroPageButton = () => {
 	return (
 		<Button
 			id="explore-events-button"
-			className="text-sm sm:text-lg flex flex-row gap-1 sm:gap-3 px-3 sm:px-6 transition h-min max-w-56 mx-auto opacity-0"
+			className="flex flex-row gap-1 sm:gap-3 px-3 sm:px-6 transition h-min max-w-56 mx-auto opacity-0"
 			onClick={scrollToMainPageStart}
 		>
-			<div className="flex uppercase items-center h-12 gap-0">projects</div>
+			<div className="flex uppercase items-center text-md sm:text-2xl h-min sm:h-16 gap-0">
+				projects
+			</div>
 			<Image
 				src="/static/down-triangle-slate.svg"
 				alt="arrow down"

@@ -3,6 +3,7 @@ import { Footer } from '@/components/footer/footer';
 import { MoveDownHeroPageButton } from '@/components/home/move-down-hero-page-button';
 import { MainHeading } from '@/components/hero/main-heading';
 import { ProjectsBox } from '@/components/projects/projects-box';
+import { SectionDetoxRank } from '@/components/articles/section-detox-rank';
 
 const Page = async () => (
 	<>
@@ -24,9 +25,7 @@ const Page = async () => (
 				<ProjectsBox />
 			</div>
 
-			<article id="section-detox-rank">
-				<div className="h-screen bg-cyan-800">kek</div>
-			</article>
+			<SectionDetoxRank />
 
 			<article id="section-fotosandrik">
 				<div className="h-screen bg-white">kek</div>
