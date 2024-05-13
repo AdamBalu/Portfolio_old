@@ -5,14 +5,10 @@ import { Poppins } from 'next/font/google';
 import { Toaster } from 'sonner';
 import React from 'react';
 
-import { FaviconLinks } from '@/components/header/favicon-links';
-
-import { Providers } from './providers';
-
 const poppins = Poppins({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata: Metadata = {
-	title: 'SnapShow'
+	title: 'Portfolio'
 };
 
 const RootLayout = ({
@@ -22,7 +18,6 @@ const RootLayout = ({
 }>) => (
 	<html lang="en">
 		<head>
-			<FaviconLinks />
 			<meta name="msapplication-TileColor" content="#da532c" />
 			<meta name="theme-color" content="#ffffff" />
 		</head>

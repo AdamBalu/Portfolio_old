@@ -1,4 +1,3 @@
-# SnapShow
-pv247 semestral project
+# Hi, I'm Adam
 
-Social media platform for sharing photos and memories from various concerts and musical events
+and this is a page about me and my works

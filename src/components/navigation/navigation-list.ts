@@ -14,13 +14,13 @@ export const NavigationItems: NavigationItem[] = [
 	},
 	{
 		href: '/events',
-		label: 'Events',
+		label: 'Works',
 		icon: '/static/events.svg',
 		selectedIcon: '/static/events-selected.svg'
 	},
 	{
 		href: '/community',
-		label: 'Community',
+		label: 'Socials',
 		icon: '/static/community.svg',
 		selectedIcon: '/static/community-selected.svg'
 	}
