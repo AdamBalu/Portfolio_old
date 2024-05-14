@@ -6,7 +6,7 @@ import { NextSectionButton } from '@/components/articles/next-section-button';
 export const SectionFotosandrik = () => (
 	<article id="section-fotosandrik">
 		<div className="h-screen bg-white relative">
-			<div className="flex flex-col gap-6 md:gap-8 items-center justify-center mx-10">
+			<div className="flex flex-col gap-2 sm:gap-6 md:gap-8 items-center justify-center mx-10 h-full">
 				<p className="text-center text-sm sm:text-2xl text-slate-400 italic">
 					💍 A photographer&apos;s website 💍
 				</p>
@@ -34,7 +34,7 @@ export const SectionFotosandrik = () => (
 						</a>
 					</div>
 					<div
-						className="font-raleway text-xs sm:text-base info relative z-20 md:text-2xl text-slate-700 transform
+						className="font-raleway text-[10px] sm:text-base info relative z-20 md:text-2xl text-slate-700 transform
 					 opacity-0 translate-y-5 duration-500 rounded-xl p-4 group-hover:bg-white group-hover:bg-opacity-50 group-hover:opacity-100 group-hover:transform group-hover:translate-y-0 "
 					>
 						<h1 className="font-bold mb-2 sm:mb-4">Simple, cozy, beautiful</h1>
@@ -59,7 +59,7 @@ export const SectionFotosandrik = () => (
 				</div>
 			</div>
 			<div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
-				<NextSectionButton nextSection="section-fotosandrik" />
+				<NextSectionButton nextSection="section-snapshow" />
 			</div>
 		</div>
 	</article>
