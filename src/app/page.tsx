@@ -4,13 +4,14 @@ import { MoveDownHeroPageButton } from '@/components/home/move-down-hero-page-bu
 import { MainHeading } from '@/components/hero/main-heading';
 import { ProjectsBox } from '@/components/projects/projects-box';
 import { SectionDetoxRank } from '@/components/articles/section-detox-rank';
+import { SectionFotosandrik } from '@/components/articles/section-fotosandrik';
 
 const Page = async () => (
 	<>
 		<Header />
 		<main className="flex flex-col flex-grow pb-20 mt-10">
 			<div>
-				<div className="flex flex-col lg:mx-12 md:justify-around gap-10 md:flex-row h-screen mt-[8%]">
+				<div className="flex flex-col lg:mx-12 md:justify-around gap-10 md:flex-row h-screen mt-[4%]">
 					{/*<Banner />*/}
 					<MainHeading />
 				</div>
@@ -27,9 +28,7 @@ const Page = async () => (
 
 			<SectionDetoxRank />
 
-			<article id="section-fotosandrik">
-				<div className="h-screen bg-white">kek</div>
-			</article>
+			<SectionFotosandrik />
 
 			<article id="section-snapshow">
 				<div className="h-screen bg-teal-800">kek</div>

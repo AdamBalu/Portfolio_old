@@ -1,12 +1,13 @@
 import Image from 'next/image';
 
 import { GetDetoxrankButton } from '@/components/articles/get-detoxrank-button';
+import { NextSectionButton } from '@/components/articles/next-section-button';
 
 import { RankImage } from './rank-image';
 
 export const SectionDetoxRank = () => (
 	<article id="section-detox-rank">
-		<div className="h-screen bg-[#1D4C81]">
+		<div className="h-screen bg-[#1D4C81] relative">
 			<div className="flex flex-col gap-6 sm:flex-row md:gap-8 xl:gap-32 items-center justify-center h-full mx-10">
 				<div className="relative group">
 					<Image
@@ -50,6 +51,9 @@ export const SectionDetoxRank = () => (
 					</div>
 					<GetDetoxrankButton />
 				</div>
+			</div>
+			<div className="absolute bottom-20 left-1/2 transfrom -translate-x-1/2">
+				<NextSectionButton nextSection="section-fotosandrik" />
 			</div>
 		</div>
 	</article>

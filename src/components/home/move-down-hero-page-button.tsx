@@ -19,8 +19,8 @@ export const MoveDownHeroPageButton = () => {
 			className="flex flex-row gap-1 sm:gap-3 px-3 sm:px-6 transition h-min max-w-56 mx-auto opacity-0"
 			onClick={scrollToMainPageStart}
 		>
-			<div className="flex uppercase items-center text-md sm:text-2xl h-min sm:h-16 gap-0">
-				projects
+			<div className="flex items-center text-md sm:text-2xl h-min sm:h-16 gap-0 font-raleway">
+				Projects
 			</div>
 			<Image
 				src="/static/down-triangle-slate.svg"
