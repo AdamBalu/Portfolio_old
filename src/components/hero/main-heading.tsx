@@ -9,7 +9,7 @@ export const MainHeading = () => {
 	return (
 		<div className="flex flex-col gap-4 items-center" id="main-heading">
 			<div className="text-2xl text-slate-300 italic">Hi... I am</div>
-			<div className="text-9xl text-slate-700">
+			<div className="text-3xl sm:text-6xl md:text-7xl xl:text-9xl text-slate-700">
 				<span className="text-primary">Adam Balu</span>šeskul
 			</div>
 			<HeadingLine

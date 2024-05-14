@@ -29,10 +29,10 @@ export const Project = ({
 					>
 						<div className="flex flex-col items-center gap-5 py-8">
 							{img}
-							<p className="text-xl text-cyan-800 transition group-hover:duration-700 group-hover:translate-y-7 group-hover:font-bold">
+							<p className="text-xl text-cyan-800 transition group-hover:duration-700 group-hover:translate-y-7 group-hover:font-bold font-raleway">
 								{heading}
 							</p>
-							<div className="group-hover:invisible text-slate-400 px-4 text-center text-sm">
+							<div className="group-hover:invisible text-slate-400 px-6 text-center text-sm font-raleway">
 								{children}
 							</div>
 						</div>
