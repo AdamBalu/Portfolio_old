@@ -10,9 +10,6 @@ module.exports = {
         'primary-shadow': "#d5890a",
         'secondary': "#1D232A",
       },
-      backgroundImage: {
-        // 'body-main': "url('/static/background.svg')",
-      },
       transitionProperty: {
         'width': 'width',
         'height': 'height'

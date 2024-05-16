@@ -1,14 +1,21 @@
 import React from 'react';
 
-import { NavLink } from '@/components/navigation/nav-link';
-import { NavigationItems } from '@/components/navigation/navigation-list';
+import { NavigationItems } from '@/data/navigation-list';
 
 export const Navigation = async () => (
-	<nav className="flex navbar-end gap-5 flex-1">
-		<ul className="hidden lg:flex justify-end gap-x-16 py-4">
-			{NavigationItems.map((item, _) => (
-				<NavLink key={item.label} href={item.href} label={item.label} />
-			))}
-		</ul>
+	<nav className="menu--right" role="navigation">
+		<div className="menuToggle">
+			<input type="checkbox" />
+			<span />
+			<span />
+			<span />
+			<ul className="menuItem rounded-bl-2xl">
+				{NavigationItems.map((item, _) => (
+					<li key={item.label} className="my-6 uppercase">
+						<a href={item.href}>{item.label}</a>
+					</li>
+				))}
+			</ul>
+		</div>
 	</nav>
 );
