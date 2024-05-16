@@ -23,7 +23,6 @@ module.exports = {
       },
       fontFamily: {
         sigmarOne: ["Sigmar One", "sans-serif"],
-        raleway: ["Raleway", "sans-serif"],
       },
       keyframes: {
         slidein: {

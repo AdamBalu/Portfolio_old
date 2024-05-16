@@ -12,7 +12,7 @@ export const NextSectionButton = ({
 	label: string;
 }) => (
 	<Button
-		className="text-slate-700 text-xs sm:text-2xl font-raleway h-6 sm:h-16"
+		className="text-slate-700 text-xs sm:text-2xl h-6 sm:h-16"
 		onClick={() => scrollToSection(nextSection)}
 	>
 		{label}

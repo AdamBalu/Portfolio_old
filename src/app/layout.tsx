@@ -1,11 +1,11 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Raleway } from 'next/font/google';
 import { Toaster } from 'sonner';
 import React from 'react';
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['400'] });
+const raleway = Raleway({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata: Metadata = {
 	title: 'Portfolio'
@@ -22,7 +22,7 @@ const RootLayout = ({
 			<meta name="theme-color" content="#ffffff" />
 		</head>
 		<body
-			className={`min-h-screen flex flex-col ${poppins.className} bg-body-main bg-repeat`}
+			className={`min-h-screen flex flex-col ${raleway.className} bg-body-main bg-repeat`}
 		>
 			{children}
 			<Toaster position="bottom-right" richColors />

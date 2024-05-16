@@ -21,7 +21,7 @@ export const SectionSnapShow = () => (
 						<h1 className="text-2xl sm:text-3xl md:text-5xl xl:text-9xl text-bold text-white font-sigmarOne">
 							SnapShow
 						</h1>
-						<p className="text-white max-w-[550px] text-sm md:text-xl ml-0 xl:ml-3 font-raleway">
+						<p className="text-white max-w-[550px] text-sm md:text-xl ml-0 xl:ml-3 ">
 							If you ever wanted to post your photos from a concert on a social
 							media and have it all in one place, now you can!
 						</p>

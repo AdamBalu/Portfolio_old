@@ -34,7 +34,7 @@ export const SectionFotosandrik = () => (
 						</a>
 					</div>
 					<div
-						className="font-raleway text-[10px] sm:text-base info relative z-20 md:text-2xl text-slate-700 transform
+						className="text-[10px] sm:text-base info relative z-20 md:text-2xl text-slate-700 transform
 					 opacity-0 translate-y-5 duration-500 rounded-xl p-4 group-hover:bg-white group-hover:bg-opacity-50 group-hover:opacity-100 group-hover:transform group-hover:translate-y-0 "
 					>
 						<h1 className="font-bold mb-2 sm:mb-4">Simple, cozy, beautiful</h1>

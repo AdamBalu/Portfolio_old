@@ -29,12 +29,12 @@ export const SkillCard = ({
 							height={64}
 							className="block group-hover:hidden"
 						/>
-						<p className="text-base sm:text-xl text-cyan-800 transition invisible group-hover:visible group-hover:duration-700 group-hover:-translate-y-7 group-hover:font-bold font-raleway">
+						<p className="text-base sm:text-xl text-cyan-800 transition invisible group-hover:visible group-hover:duration-700 group-hover:-translate-y-7 group-hover:font-bold">
 							{heading}
 						</p>
 						<div
 							className="opacity-0 group-hover:opacity-100 group-hover:transfer group-hover:-translate-y-10 sm:group-hover:-translate-y-5
-						transition transform-opacity ease-in-out duration-500 text-slate-400 px-6 text-center text-xs sm:text-sm font-raleway"
+						transition transform-opacity ease-in-out duration-500 text-slate-400 px-6 text-center text-xs sm:text-sm"
 						>
 							{description}
 						</div>

@@ -12,7 +12,7 @@ export const SectionDetoxRank = () => (
 						<h1 className="text-2xl sm:text-3xl md:text-7xl xl:text-9xl text-bold text-white font-sigmarOne">
 							Detox Rank
 						</h1>
-						<p className="text-white max-w-[550px] text-sm md:text-xl ml-0 xl:ml-3 font-raleway">
+						<p className="text-white max-w-[550px] text-sm md:text-xl ml-0 xl:ml-3">
 							get your dopamine circuitry back on track by reducing dopaminergic
 							activities and doing healthy, productive tasks
 						</p>
