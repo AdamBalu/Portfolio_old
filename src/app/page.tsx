@@ -5,6 +5,7 @@ import { MainHeading } from '@/components/hero/main-heading';
 import { ProjectsBox } from '@/components/projects/projects-box';
 import { SectionDetoxRank } from '@/components/articles/section-detox-rank';
 import { SectionFotosandrik } from '@/components/articles/section-fotosandrik';
+import { SectionSnapShow } from '@/components/articles/section-snapshow';
 
 const Page = async () => (
 	<>
@@ -30,9 +31,7 @@ const Page = async () => (
 
 			<SectionFotosandrik />
 
-			<article id="section-snapshow">
-				<div className="h-screen bg-teal-800">kek</div>
-			</article>
+			<SectionSnapShow />
 		</main>
 		<Footer />
 	</>

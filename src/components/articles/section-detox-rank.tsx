@@ -39,12 +39,12 @@ export const SectionDetoxRank = () => (
 						className="invisible xl:visible xl:w-72 xl:h-72"
 					/>
 				</div>
-				<div className="flex flex-col gap-4 sm:gap-16 justify-center items-center">
+				<div className="flex flex-col gap-4 sm:gap-16 justify-center items-center xl:items-start">
 					<div className="flex flex-col gap-2 sm:gap-8">
 						<h1 className="text-2xl sm:text-3xl md:text-7xl xl:text-9xl text-bold text-white font-sigmarOne">
 							Detox Rank
 						</h1>
-						<p className="text-white max-w-[550px] text-sm md:text-xl ml-0 sm:ml-3 font-raleway">
+						<p className="text-white max-w-[550px] text-sm md:text-xl ml-0 xl:ml-3 font-raleway">
 							get your dopamine circuitry back on track by reducing dopaminergic
 							activities and doing healthy, productive tasks
 						</p>
