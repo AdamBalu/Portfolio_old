@@ -20,7 +20,7 @@ export const SkillCard = ({
 		<div className="h-48 sm:h-64 group-hover:transition-height group-hover:ease-in-out group-hover:duration-500">
 			<div className="relative cursor-pointer mb-5 bg-white rounded-3xl h-26 group-hover:h-48 sm:group-hover:h-64 group-hover:transition-height group-hover:duration-700">
 				<div className="h-[9rem] w-[9rem] sm:h-[15rem] sm:w-[15rem] group-hover:h-52 sm:group-hover:h-64 transition-height ease-in duration-200 bg-white border-[1px] group-hover:shadow-2xl group-hover:border-primary border-slate-100 shadow-xl rounded-2xl relative z-10">
-					<div className="flex flex-col items-center gap-5 py-8">
+					<div className="flex flex-col items-center pt-6 sm:pt-0 gap-4 sm:gap-2 py-1">
 						<Stars count={starCount} />
 						<Image
 							src={iconSrc}
