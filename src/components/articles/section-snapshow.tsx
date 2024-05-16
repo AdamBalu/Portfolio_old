@@ -26,18 +26,16 @@ export const SectionSnapShow = () => (
 							media and have it all in one place, now you can!
 						</p>
 					</div>
-					<div className="border border-primary group-hover:opacity-0 transition duration-200 rounded-xl px-4 py-2 sm:px-5 sm:py-3 md:px-8 md:py-6 text-slate-700">
-						<a
-							className="flex items-center gap-1 sm:gap-4 text-md md:text-2xl xl:text-4xl text-blue-200 bottom-2 right-2 sm:bottom-10 sm:right-10"
-							href="https://snap-show.vercel.app/"
-						>
-							start snapping
-							<SquareArrowOutUpRight
-								size={24}
-								className="w-3 h-3 sm:w-6 sm:h-6"
-							/>
-						</a>
-					</div>
+					<a
+						className="flex items-center gap-1 sm:gap-4 ml-0 xl:ml-3 text-md md:text-2xl xl:text-4xl text-blue-200"
+						href="https://snap-show.vercel.app/"
+					>
+						start snapping
+						<SquareArrowOutUpRight
+							size={24}
+							className="w-3 h-3 sm:w-6 sm:h-6"
+						/>
+					</a>
 				</div>
 			</div>
 			<div className="absolute bottom-20 left-1/2 transfrom -translate-x-1/2">
