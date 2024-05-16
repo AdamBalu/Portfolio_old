@@ -6,6 +6,7 @@ import { ProjectsBox } from '@/components/projects/projects-box';
 import { SectionDetoxRank } from '@/components/articles/section-detox-rank';
 import { SectionFotosandrik } from '@/components/articles/section-fotosandrik';
 import { SectionSnapShow } from '@/components/articles/section-snapshow';
+import { SectionSkills } from '@/components/skills/section-skills';
 
 const Page = async () => (
 	<>
@@ -32,6 +33,8 @@ const Page = async () => (
 			<SectionFotosandrik />
 
 			<SectionSnapShow />
+
+			<SectionSkills />
 		</main>
 		<Footer />
 	</>

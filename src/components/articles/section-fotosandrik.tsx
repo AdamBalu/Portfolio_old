@@ -4,7 +4,7 @@ import { SquareArrowOutUpRight } from 'lucide-react';
 import { NextSectionButton } from '@/components/articles/next-section-button';
 
 export const SectionFotosandrik = () => (
-	<article id="section-fotosandrik">
+	<div id="section-fotosandrik">
 		<div className="h-screen bg-white relative">
 			<div className="flex flex-col gap-2 sm:gap-6 md:gap-8 items-center justify-center mx-10 h-full">
 				<p className="text-center text-sm sm:text-2xl text-slate-400 italic">
@@ -59,8 +59,8 @@ export const SectionFotosandrik = () => (
 				</div>
 			</div>
 			<div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
-				<NextSectionButton nextSection="section-snapshow" />
+				<NextSectionButton nextSection="section-snapshow" label="SnapShow" />
 			</div>
 		</div>
-	</article>
+	</div>
 );
