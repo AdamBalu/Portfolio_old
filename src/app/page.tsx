@@ -7,7 +7,6 @@ import { SectionDetoxRank } from '@/components/articles/section-detox-rank';
 import { SectionFotosandrik } from '@/components/articles/section-fotosandrik';
 import { SectionSnapShow } from '@/components/articles/section-snapshow';
 import { SectionSkills } from '@/components/skills/section-skills';
-import { SectionContact } from '@/components/contact/section-contact';
 import { Socials } from '@/components/socials/socials';
 
 const Page = async () => (
