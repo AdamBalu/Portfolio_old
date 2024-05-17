@@ -21,8 +21,9 @@ export const SectionSnapShow = () => (
 							SnapShow
 						</h1>
 						<p className="text-white max-w-[550px] text-sm md:text-xl ml-0 xl:ml-3 ">
-							If you ever wanted to post your photos from a concert on a social
-							media and have it all in one place, now you can!
+							If you ever wanted to post your photos from a concert on
+							a&nbsp;social media platform and have it all in one place, now you
+							can!
 						</p>
 					</div>
 					<GoToSnapshowButton />
