@@ -1,12 +1,11 @@
-import { SquareArrowOutUpRight } from 'lucide-react';
-
 import { NextSectionButton } from '@/components/articles/next-section-button';
 import { cn } from '@/lib/cn';
+import { GoToSnapshowButton } from '@/components/articles/go-to-snapshow-button';
 
 export const SectionSnapShow = () => (
 	<div id="section-snapshow">
 		<div className="h-screen bg-teal-900 relative">
-			<div className="flex flex-col gap-6 sm:flex-row md:gap-8 xl:gap-10 items-center justify-start pt-8 sm:pt-0 sm:justify-center h-full mx-10">
+			<div className="flex flex-col gap-6 sm:flex-row-reverse md:gap-8 xl:gap-10 items-center justify-start pt-8 sm:pt-0 sm:justify-center h-full mx-10">
 				<div className="relative group">
 					<object
 						width={450}
@@ -26,16 +25,7 @@ export const SectionSnapShow = () => (
 							media and have it all in one place, now you can!
 						</p>
 					</div>
-					<a
-						className="flex items-center gap-1 sm:gap-4 ml-0 xl:ml-3 text-md md:text-2xl xl:text-4xl text-blue-200"
-						href="https://snap-show.vercel.app/"
-					>
-						start snapping
-						<SquareArrowOutUpRight
-							size={24}
-							className="w-3 h-3 sm:w-6 sm:h-6"
-						/>
-					</a>
+					<GoToSnapshowButton />
 				</div>
 			</div>
 			<div className="absolute bottom-8 left-1/2 transfrom -translate-x-1/2">

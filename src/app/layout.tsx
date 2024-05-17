@@ -5,6 +5,8 @@ import { Raleway } from 'next/font/google';
 import { Toaster } from 'sonner';
 import React from 'react';
 
+import { Providers } from './providers';
+
 const raleway = Raleway({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata: Metadata = {
@@ -24,7 +26,7 @@ const RootLayout = ({
 		<body
 			className={`min-h-screen flex flex-col ${raleway.className} bg-body-main bg-repeat`}
 		>
-			{children}
+			<Providers>{children}</Providers>
 			<Toaster position="bottom-right" richColors />
 		</body>
 	</html>

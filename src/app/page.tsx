@@ -38,7 +38,7 @@ const Page = async () => (
 
 			<SectionSkills />
 
-			<SectionContact />
+			{/*<SectionContact />*/}
 		</main>
 		<Footer />
 	</>

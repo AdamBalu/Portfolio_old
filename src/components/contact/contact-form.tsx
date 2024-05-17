@@ -2,9 +2,11 @@
 import { z } from 'zod';
 import { FormProvider, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { toast } from 'sonner';
 
 import { FormInput } from '@/components/ui/form/form-input';
 import { FormTextArea } from '@/components/ui/form/form-textarea';
+import { useSendEmailMutation } from '@/hooks/email';
 
 import { Button } from '../ui/button';
 
@@ -13,7 +15,7 @@ const schema = z.object({
 	message: z.string().min(10).max(1000)
 });
 
-type ContactFormSchema = z.infer<typeof schema>;
+export type ContactFormSchema = z.infer<typeof schema>;
 
 export const ContactForm = () => {
 	const form = useForm<ContactFormSchema>({
@@ -24,15 +26,25 @@ export const ContactForm = () => {
 		}
 	});
 
-	const onSubmit = (data: ContactFormSchema) => {
-		console.log(data.email);
+	const mutation = useSendEmailMutation();
+
+	const handleSubmit = (data: ContactFormSchema) => {
+		mutation.mutate(data, {
+			onSuccess: () => {
+				form.reset();
+				toast.success('Email sent successfully');
+			},
+			onError: _ => {
+				toast.error('Email failed to send');
+			}
+		});
 	};
 
 	return (
 		<FormProvider {...form}>
 			<form
-				onSubmit={form.handleSubmit(onSubmit)}
 				className="w-[95%] sm:w-[80%] max-w-[700px] flex flex-col gap-4 items-center"
+				onSubmit={form.handleSubmit(handleSubmit)}
 			>
 				<FormInput
 					label="Email"
