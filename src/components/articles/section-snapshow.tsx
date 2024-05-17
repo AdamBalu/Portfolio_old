@@ -38,7 +38,7 @@ export const SectionSnapShow = () => (
 					</a>
 				</div>
 			</div>
-			<div className="absolute bottom-20 left-1/2 transfrom -translate-x-1/2">
+			<div className="absolute bottom-8 left-1/2 transfrom -translate-x-1/2">
 				<NextSectionButton nextSection="section-skills" label="Skills" />
 			</div>
 		</div>

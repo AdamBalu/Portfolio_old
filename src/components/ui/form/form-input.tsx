@@ -25,7 +25,7 @@ export const FormInput = ({
 		<div className="form-control w-full">
 			{label && (
 				<label htmlFor={name} className="label">
-					<span className="label-text text-white font-sarpanch font-extrabold">
+					<span className="label-text text-slate-400 font-extrabold">
 						{label}
 					</span>
 				</label>
@@ -33,7 +33,7 @@ export const FormInput = ({
 			<input
 				id={name}
 				className={cn(
-					'input input-bordered w-full border-primary focus:border-primary bg-neutral',
+					'input text-slate-700 input-bordered w-full border-gray-200 focus:border-primary bg-gray-50',
 					errors[name] && 'input-error',
 					className
 				)}

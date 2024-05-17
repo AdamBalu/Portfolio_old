@@ -7,17 +7,20 @@ import { SectionDetoxRank } from '@/components/articles/section-detox-rank';
 import { SectionFotosandrik } from '@/components/articles/section-fotosandrik';
 import { SectionSnapShow } from '@/components/articles/section-snapshow';
 import { SectionSkills } from '@/components/skills/section-skills';
+import { SectionContact } from '@/components/contact/section-contact';
+import { Socials } from '@/components/socials/socials';
 
 const Page = async () => (
 	<>
 		<Header />
 		<main className="flex flex-col flex-grow pb-20 mt-10">
 			<div id="homepage">
-				<div className="flex flex-col lg:mx-12 md:justify-around gap-10 md:flex-row h-screen mt-[4%]">
+				<div className="flex flex-col lg:mx-12 md:justify-start gap-10 h-screen mt-[4%]">
 					<MainHeading />
+					<Socials />
 				</div>
 			</div>
-			<div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
+			<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
 				<div className="animate-bounce">
 					<MoveDownHeroPageButton />
 				</div>
@@ -34,6 +37,8 @@ const Page = async () => (
 			<SectionSnapShow />
 
 			<SectionSkills />
+
+			<SectionContact />
 		</main>
 		<Footer />
 	</>

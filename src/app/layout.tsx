@@ -8,7 +8,7 @@ import React from 'react';
 const raleway = Raleway({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata: Metadata = {
-	title: 'My Portfolio'
+	title: 'Adam Balušeskul - Portfolio'
 };
 
 const RootLayout = ({

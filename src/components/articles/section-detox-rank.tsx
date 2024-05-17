@@ -20,7 +20,7 @@ export const SectionDetoxRank = () => (
 					<GetDetoxrankButton />
 				</div>
 			</div>
-			<div className="absolute bottom-20 left-1/2 transfrom -translate-x-1/2">
+			<div className="absolute bottom-8 left-1/2 transfrom -translate-x-1/2">
 				<NextSectionButton
 					nextSection="section-fotosandrik"
 					label="fotosandrik"

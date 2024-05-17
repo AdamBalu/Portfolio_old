@@ -10,15 +10,11 @@ export const NavigationItems: NavigationItem[] = [
 	},
 	{
 		href: 'projects',
-		label: 'Works'
+		label: 'Projects'
 	},
 	{
 		href: 'section-skills',
 		label: 'Skills'
-	},
-	{
-		href: 'section-socials',
-		label: 'Socials'
 	},
 	{
 		href: 'section-contact',
