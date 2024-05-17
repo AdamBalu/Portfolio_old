@@ -3,21 +3,15 @@ import React, { useEffect } from 'react';
 import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
-
-const scrollToMainPageStart = () => {
-	const mainPageStart = document.getElementById('homepage-main-content');
-	if (mainPageStart) {
-		mainPageStart.scrollIntoView({ behavior: 'smooth' });
-	}
-};
+import { scrollToSection } from '@/common/functions/scroll-to-section';
 
 export const MoveDownHeroPageButton = () => {
 	useEffect(() => changeOpacity());
 	return (
 		<Button
-			id="explore-events-button"
+			id="explore-projects-button"
 			className="flex flex-row gap-1 sm:gap-3 px-3 sm:px-6 transition h-min max-w-56 mx-auto opacity-0"
-			onClick={scrollToMainPageStart}
+			onClick={() => scrollToSection('projects')}
 		>
 			<div className="flex items-center text-md sm:text-2xl h-min sm:h-16 gap-0">
 				Projects
@@ -34,7 +28,7 @@ export const MoveDownHeroPageButton = () => {
 };
 
 const changeOpacity = () => {
-	const h = document.getElementById('explore-events-button');
+	const h = document.getElementById('explore-projects-button');
 
 	if (h) {
 		setTimeout(() => {

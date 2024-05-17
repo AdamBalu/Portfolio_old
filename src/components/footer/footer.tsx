@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { MobileNav } from '@/components/navigation/mobile-nav';
-
 // TODO link to icons8
 export const Footer = () => (
-	<footer className="flex lg:hidden font-sarpanch h-14 text-white w-screen py-1 bg-zinc-900 z-20 fixed bottom-0">
-		<MobileNav />
+	<footer className="flex text-white py-1 min-h-64 bg-slate-700">
+		<div className="flex items-center justify-center w-full">
+			<p className="text-2xl">Icons by Icons8</p>
+		</div>
 	</footer>
 );

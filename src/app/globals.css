@@ -16,16 +16,16 @@ header {
     display: block;
     position: relative;
     top: 50px;
-    z-index: 1;
+    z-index: 11;
     -webkit-user-select: none;
     user-select: none;
 }
-.menuToggle a {
+.menuToggle button {
     text-decoration: none;
     color: #fdfdfd;
     transition: all 0.3s ease;
 }
-.menuToggle a:hover {
+.menuToggle button:hover {
     color: #f8ab28;
 }
 .menuToggle input {
@@ -47,23 +47,22 @@ header {
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
-    position: relative;
-    background: #cdcdcd;
+    background: #96989f;
     border-radius: 3px;
     z-index: 1;
-    transform-origin: 4px 0px;
+    transform-origin: 4px 0;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 .menuToggle span:first-child {
-    transform-origin: 0% 0%;
+    transform-origin: 0 0;
 }
 .menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
+    transform-origin: 0 100%;
 }
 .menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: #f4f4f4;
 }
 .menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
@@ -78,12 +77,11 @@ header {
 .menuItem {
     position: absolute;
     width: 300px;
-    padding: 50px;
-    padding-top: 125px;
+    padding: 125px 50px 50px;
     background: #334155;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
+    transform-origin: 0 0;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 .menuItem li {
@@ -105,7 +103,7 @@ header {
     margin: -100px 0 0 0;
     transform: translate(100%, 0);
 }
-.menu--right .menuItem li a:hover {
+.menu--right .menuItem li button:hover {
     padding-left: 5px;
 }
 @keyframes text-slide-in {

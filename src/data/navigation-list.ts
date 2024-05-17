@@ -1,27 +1,27 @@
-type NavigationItem = {
+export type NavigationItem = {
 	href: string;
 	label: string;
 };
 
 export const NavigationItems: NavigationItem[] = [
 	{
-		href: '#',
+		href: 'homepage',
 		label: 'Home'
 	},
 	{
-		href: '',
+		href: 'projects',
 		label: 'Works'
 	},
 	{
-		href: '/skills',
+		href: 'section-skills',
 		label: 'Skills'
 	},
 	{
-		href: '/socials',
+		href: 'section-socials',
 		label: 'Socials'
 	},
 	{
-		href: '/contact',
+		href: 'section-contact',
 		label: 'Contact me'
 	}
 ];
