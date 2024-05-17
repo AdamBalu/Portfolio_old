@@ -15,9 +15,9 @@ export const NavigationItems: NavigationItem[] = [
 	{
 		href: 'section-skills',
 		label: 'Skills'
-	},
-	{
-		href: 'section-contact',
-		label: 'Contact me'
 	}
+	// {
+	// 	href: 'section-contact',
+	// 	label: 'Contact me'
+	// }
 ];
