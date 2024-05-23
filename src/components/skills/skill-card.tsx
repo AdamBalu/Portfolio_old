@@ -27,7 +27,7 @@ export const SkillCard = ({
 							alt="skill icon"
 							width={64}
 							height={64}
-							className="block group-hover:hidden"
+							className="block group-hover:hidden sm:mt-7"
 						/>
 						<p className="text-base sm:text-xl transition invisible group-hover:visible group-hover:duration-700 group-hover:-translate-y-7 group-hover:font-bold">
 							{heading}

@@ -8,7 +8,7 @@ import { HeadingAnnouncer } from '@/components/ui/heading-announcer';
 export const MainHeading = () => {
 	useEffect(() => dynamicHeadingsOpacity());
 	return (
-		<div className="flex flex-col gap-4 items-center" id="main-heading">
+		<div className="flex flex-col gap-4 items-center mt-12" id="main-heading">
 			<HeadingAnnouncer label="Hi, I am" />
 			<div className="text-3xl sm:text-6xl md:text-7xl xl:text-9xl animate-slidein">
 				<span className="text-primary dark:text-primary-dark transition-color duration-500 ease-in-out">

@@ -41,7 +41,7 @@ export const Project = ({
 						<Image
 							src="static/down-triangle.svg"
 							alt="arrow down"
-							className="fill-amber-200 text-amber-200"
+							className="fill-amber-200 text-amber-200 h-auto"
 							width={32}
 							height={32}
 						/>

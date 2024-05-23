@@ -14,7 +14,7 @@ const Page = async () => (
 		<Header />
 		<main className="flex flex-col flex-grow pb-20 mt-10">
 			<div id="homepage">
-				<div className="flex flex-col lg:mx-12 md:justify-start gap-10 h-screen mt-[4%]">
+				<div className="flex flex-col lg:mx-12 md:justify-start gap-10 h-screen  min-h-[500px] sm:min-h-[600px] md:min-h-[750px] mt-[4%]">
 					<MainHeading />
 					<Socials className="bg-white dark:bg-secondary" />
 				</div>

@@ -4,7 +4,7 @@ import { GoToSnapshowButton } from '@/components/articles/go-to-snapshow-button'
 
 export const SectionSnapShow = () => (
 	<div id="section-snapshow">
-		<div className="h-screen bg-teal-900 relative">
+		<div className="h-screen min-h-[550px] sm:min-h-[700px] bg-teal-900 relative">
 			<div className="flex flex-col gap-6 sm:flex-row-reverse md:gap-8 xl:gap-10 items-center justify-start pt-8 sm:pt-0 sm:justify-center h-full mx-10">
 				<div className="relative group">
 					<object

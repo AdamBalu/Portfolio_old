@@ -7,7 +7,7 @@ import { HeadingAnnouncer } from '@/components/ui/heading-announcer';
 
 export const ProjectsBox = () => (
 	<div className="mx-auto max-w-[1400px]">
-		<div className="flex flex-col justify-center sm:h-screen">
+		<div className="flex flex-col justify-center sm:h-screen  min-h-[500px] sm:min-h-[600px] md:min-h-[850px]">
 			<HeadingAnnouncer label="My main" />
 			<h1 className="text-5xl md:text-7xl xl:text-9xl text-bold font-sigmarOne text-center mb-10">
 				Projects
@@ -22,6 +22,7 @@ export const ProjectsBox = () => (
 									alt="project image"
 									width={128}
 									height={128}
+									className="h-auto"
 								/>
 							</div>
 						</div>
@@ -55,7 +56,7 @@ export const ProjectsBox = () => (
 				</Project>
 				<Project
 					img={
-						<div className="h-40 group-hover:duration-500">
+						<div className="h-40 group-hover:duration-500 group-hover:transition-transform group-hover:-rotate-6">
 							<div className="w-48 flex justify-center">
 								<Image
 									src="/static/snapshow.svg"

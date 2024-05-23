@@ -6,7 +6,7 @@ import { HeadingAnnouncer } from '@/components/ui/heading-announcer';
 
 export const SectionFotosandrik = () => (
 	<div id="section-fotosandrik">
-		<div className="h-screen relative">
+		<div className="h-screen  min-h-[500px] sm:min-h-[800px] relative">
 			<div className="flex flex-col gap-2 sm:gap-6 md:gap-8 items-center justify-center mx-10 h-full">
 				<HeadingAnnouncer label="💍 A photographer's website 💍" />
 				<h1 className="text-2xl sm:text-3xl md:text-7xl xl:text-9xl text-bold text-center font-sigmarOne">

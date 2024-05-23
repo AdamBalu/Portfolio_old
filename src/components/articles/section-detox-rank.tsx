@@ -4,7 +4,7 @@ import { DetoxRankImage } from '@/components/articles/detox-rank-image';
 
 export const SectionDetoxRank = () => (
 	<div id="section-detox-rank">
-		<div className="h-screen bg-[#1D4C81] relative">
+		<div className="h-screen min-h-[550px] sm:min-h-[600px] md:min-h-[750px] bg-[#1D4C81] relative">
 			<div className="flex flex-col gap-6 sm:flex-row md:gap-8 xl:gap-32 items-center justify-start pt-8 sm:pt-0 sm:justify-center h-full mx-10">
 				<DetoxRankImage />
 				<div className="flex flex-col gap-4 sm:gap-16 justify-center items-center xl:items-start">

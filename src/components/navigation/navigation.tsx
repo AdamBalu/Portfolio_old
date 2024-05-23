@@ -53,15 +53,15 @@ export const Navigation = () => {
 			<nav className="menu--right" role="navigation">
 				<div className="menuToggle">
 					<input type="checkbox" id="navbar-checkbox" />
-					<span />
-					<span />
-					<span />
-					<ul className="menuItem rounded-bl-2xl">
+					<span className="w-[17px] sm:w-[33px]" />
+					<span className="w-[17px] sm:w-[33px]" />
+					<span className="w-[17px] sm:w-[33px]" />
+					<ul className="menuItem rounded-bl-2xl pt-20 p-8 md:px-12 w-48 md:w-64 shadow-md dark:border dark:border-slate-700 bg-gray-50 dark:bg-secondary">
 						{NavigationItems.map((item, _) => (
-							<li key={item.label} className="my-6">
+							<li key={item.label} className="my-2 sm:my-6">
 								<button
 									onClick={() => scrollToSection(item.href)}
-									className="uppercase"
+									className="uppercase text-slate-700 dark:text-slate-300 hover:text-primary hover:dark:text-primary-dark"
 								>
 									{item.label}
 								</button>
