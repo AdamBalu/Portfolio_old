@@ -2,6 +2,7 @@
 
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  darkMode: 'class',
 
   theme: {
     extend: {
@@ -9,10 +10,14 @@ module.exports = {
         'primary': "#faac28",
         'primary-shadow': "#d5890a",
         'secondary': "#1D232A",
+        'primary-dark': '#fdc45d',
+        'primary-shadow-dark': '#e3a739',
       },
       transitionProperty: {
         'width': 'width',
-        'height': 'height'
+        'height': 'height',
+        'color': 'color',
+        'background': 'background-color'
       },
 
       container: {
@@ -38,35 +43,6 @@ module.exports = {
       },
 
     }
-  },
-  daisyui: {
-    themes: [
-      {
-        "dark": {
-          "primary": "#f59e0b",
-          "primary-focus": "#570df8",
-          "primary-content": "#000000",
-          "secondary": "#f000b8",
-          "secondary-focus": "#bd0091",
-          "secondary-content": "#ffffff",
-          "accent": "#ecae48",
-          "accent-focus": "#e1a138",
-          "accent-content": "#ffffff",
-          "neutral": "#1d232a",
-          "neutral-focus": "#16181d",
-          "neutral-content": "#ffffff",
-          "base-100": "#ffffff",
-          "base-200": "#2a2e37",
-          "base-300": "#16181d",
-          "base-content": "#ebecf0",
-          "info": "#66c6ff",
-          "success": "#87d039",
-          "warning": "#e2d562",
-          "error": "#ff6f6f"
-        }
-      },
-      "light"
-    ]
   },
 
   plugins: [require("daisyui")]

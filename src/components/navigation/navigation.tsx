@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 
 import { NavigationItems } from '@/data/navigation-list';
 import { scrollToSection } from '@/common/functions/scroll-to-section';
+import { ChangeThemeButton } from '@/components/navigation/change-theme-button';
 
 export const Navigation = () => {
 	useEffect(() => {
@@ -47,25 +48,28 @@ export const Navigation = () => {
 	}, []);
 
 	return (
-		<nav className="menu--right" role="navigation">
-			<div className="menuToggle">
-				<input type="checkbox" id="navbar-checkbox" />
-				<span />
-				<span />
-				<span />
-				<ul className="menuItem rounded-bl-2xl">
-					{NavigationItems.map((item, _) => (
-						<li key={item.label} className="my-6">
-							<button
-								onClick={() => scrollToSection(item.href)}
-								className="uppercase"
-							>
-								{item.label}
-							</button>
-						</li>
-					))}
-				</ul>
-			</div>
-		</nav>
+		<div>
+			<ChangeThemeButton />
+			<nav className="menu--right" role="navigation">
+				<div className="menuToggle">
+					<input type="checkbox" id="navbar-checkbox" />
+					<span />
+					<span />
+					<span />
+					<ul className="menuItem rounded-bl-2xl">
+						{NavigationItems.map((item, _) => (
+							<li key={item.label} className="my-6">
+								<button
+									onClick={() => scrollToSection(item.href)}
+									className="uppercase"
+								>
+									{item.label}
+								</button>
+							</li>
+						))}
+					</ul>
+				</div>
+			</nav>
+		</div>
 	);
 };

@@ -2,18 +2,17 @@ import Image from 'next/image';
 import { SquareArrowOutUpRight } from 'lucide-react';
 
 import { NextSectionButton } from '@/components/articles/next-section-button';
+import { HeadingAnnouncer } from '@/components/ui/heading-announcer';
 
 export const SectionFotosandrik = () => (
 	<div id="section-fotosandrik">
-		<div className="h-screen bg-white relative">
+		<div className="h-screen relative">
 			<div className="flex flex-col gap-2 sm:gap-6 md:gap-8 items-center justify-center mx-10 h-full">
-				<p className="text-center text-sm sm:text-2xl text-slate-400 italic">
-					💍 A photographer&apos;s website 💍
-				</p>
-				<h1 className="text-2xl sm:text-3xl md:text-7xl xl:text-9xl text-bold text-slate-700 text-center font-sigmarOne">
+				<HeadingAnnouncer label="💍 A photographer's website 💍" />
+				<h1 className="text-2xl sm:text-3xl md:text-7xl xl:text-9xl text-bold text-center font-sigmarOne">
 					Fotosandrik
 				</h1>
-				<div className="group p-[1.5rem] bg-white relative flex flex-end transition ease-out rounded-xl max-w-[900px] aspect-video duration-700 transform hover:translate-y-4 hover:before:opacity-50">
+				<div className="group p-[1.5rem] relative flex flex-end transition ease-out rounded-xl max-w-[900px] aspect-video duration-700 transform hover:translate-y-4 hover:before:opacity-50">
 					<Image
 						src="/static/wedding.webp"
 						alt="wedding picture"

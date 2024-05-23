@@ -3,12 +3,13 @@ import Image from 'next/image';
 
 import { Project } from '@/components/projects/project';
 import { scrollToSection } from '@/common/functions/scroll-to-section';
+import { HeadingAnnouncer } from '@/components/ui/heading-announcer';
 
 export const ProjectsBox = () => (
 	<div className="mx-auto max-w-[1400px]">
 		<div className="flex flex-col justify-center sm:h-screen">
-			<p className="text-center text-2xl text-slate-400 italic">My main</p>
-			<h1 className="text-5xl md:text-7xl xl:text-9xl text-bold font-sigmarOne text-center mb-10 text-slate-700">
+			<HeadingAnnouncer label="My main" />
+			<h1 className="text-5xl md:text-7xl xl:text-9xl text-bold font-sigmarOne text-center mb-10">
 				Projects
 			</h1>
 			<div className="mx-4 my-2 sm:my-0 mb-20 sm:mb-0 flex flex-col sm:flex-row justify-center items-center gap-20 sm:gap-2 md:mx-8">
@@ -46,7 +47,7 @@ export const ProjectsBox = () => (
 						</div>
 					}
 					heading="Fotosandrik"
-					bg="bg-amber-400"
+					bg="bg-primary dark:bg-primary-dark"
 					borderOnHover="group-hover:border-amber-200"
 					onClick={() => scrollToSection('section-fotosandrik')}
 				>

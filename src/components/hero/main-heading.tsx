@@ -3,14 +3,18 @@
 import { useEffect } from 'react';
 
 import { HeadingLine } from '@/components/hero/heading-line';
+import { HeadingAnnouncer } from '@/components/ui/heading-announcer';
 
 export const MainHeading = () => {
 	useEffect(() => dynamicHeadingsOpacity());
 	return (
 		<div className="flex flex-col gap-4 items-center" id="main-heading">
-			<div className="text-2xl text-slate-400 italic">Hi... I am</div>
-			<div className="text-3xl sm:text-6xl md:text-7xl xl:text-9xl text-slate-700">
-				<span className="text-primary">Adam Balu</span>šeskul
+			<HeadingAnnouncer label="Hi, I am" />
+			<div className="text-3xl sm:text-6xl md:text-7xl xl:text-9xl animate-slidein">
+				<span className="text-primary dark:text-primary-dark transition-color duration-500 ease-in-out">
+					Adam Balu
+				</span>
+				šeskul
 			</div>
 			<HeadingLine
 				spanText="web"
@@ -53,8 +57,8 @@ const changeColor = (h: HTMLElement | null, timeout: number) => {
 	setTimeout(() => {
 		const span = h.querySelector('span');
 		if (span) {
-			span.style.color = '#f59e0b';
+			span.classList.add('text-primary');
+			span.classList.add('dark:text-primary-dark');
 		}
-		// h.style.opacity = '1';
 	}, timeout);
 };

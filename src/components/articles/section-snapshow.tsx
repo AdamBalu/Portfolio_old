@@ -17,10 +17,10 @@ export const SectionSnapShow = () => (
 				</div>
 				<div className="flex flex-col gap-4 sm:gap-16 justify-center items-center xl:items-start">
 					<div className="flex flex-col gap-2 sm:gap-8">
-						<h1 className="text-2xl sm:text-3xl md:text-5xl xl:text-9xl text-bold text-white font-sigmarOne">
+						<h1 className="text-2xl sm:text-3xl md:text-5xl xl:text-9xl text-bold text-white dark:text-slate-300 transition-color duration-200 ease-in-out font-sigmarOne">
 							SnapShow
 						</h1>
-						<p className="text-white max-w-[550px] text-sm md:text-xl ml-0 xl:ml-3 ">
+						<p className="text-white dark:text-slate-300 transition-color duration-200 ease-in-out max-w-[550px] text-sm md:text-xl ml-0 xl:ml-3 ">
 							If you ever wanted to post your photos from a concert on
 							a&nbsp;social media platform and have it all in one place, now you
 							can!
