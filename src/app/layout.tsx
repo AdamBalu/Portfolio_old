@@ -18,16 +18,18 @@ const RootLayout = ({
 }: Readonly<{
 	children: React.ReactNode;
 }>) => (
-	<html lang="en">
+	<html lang="en" suppressHydrationWarning>
 		<head>
 			<meta name="msapplication-TileColor" content="#da532c" />
 			<meta name="theme-color" content="#ffffff" />
 		</head>
 		<body
-			className={`min-h-screen flex flex-col ${raleway.className} bg-body-main bg-repeat`}
+			className={`min-h-screen flex flex-col ${raleway.className}  text-slate-700 dark:text-slate-200 transition-color duration-500 ease-in-out`}
 		>
-			<Providers>{children}</Providers>
-			<Toaster position="bottom-right" richColors />
+			<div className="bg-white dark:bg-secondary transition-background duration-700 ease-in-out">
+				<Providers>{children}</Providers>
+				<Toaster position="bottom-right" richColors />
+			</div>
 		</body>
 	</html>
 );

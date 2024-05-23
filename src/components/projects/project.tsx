@@ -22,14 +22,14 @@ export const Project = ({
 		<div className="mx-auto w-[90%] group-hover:w-[100%] group-hover:transition-width group-hover:ease-in group-hover:duration-200">
 			<div className="h-[340px] group-hover:transition-height group-hover:ease-in-out group-hover:duration-500">
 				<div
-					className={`relative cursor-pointer mb-5 ${bg} rounded-3xl h-96 group-hover:h-[400px] group-hover:transition-height group-hover:duration-700`}
+					className={`relative cursor-pointer mb-5 ${bg}  rounded-3xl h-96 group-hover:h-[400px] group-hover:transition-height group-hover:duration-700`}
 				>
 					<div
-						className={`h-full w-full group-hover:h-[19rem] transition-height ease-in duration-200 bg-white border-[1px] group-hover:shadow-2xl ${borderOnHover} border-slate-100 shadow-xl rounded-2xl relative z-10`}
+						className={`h-full w-full group-hover:h-[19rem] transition-background ease-in duration-300 bg-white dark:bg-secondary border-[1px] group-hover:shadow-2xl ${borderOnHover} border-slate-100 dark:border-slate-600 shadow-xl rounded-2xl relative z-10`}
 					>
 						<div className="flex flex-col items-center gap-5 py-8">
 							{img}
-							<p className="text-xl text-cyan-800 transition group-hover:duration-700 group-hover:translate-y-7 group-hover:font-bold">
+							<p className="text-xl transition group-hover:duration-700 group-hover:translate-y-7 group-hover:font-bold">
 								{heading}
 							</p>
 							<div className="group-hover:invisible text-slate-400 px-6 text-center text-sm">

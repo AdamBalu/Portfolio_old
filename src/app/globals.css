@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+object[type="image/svg+xml"] {
+    background-color: transparent;
+}
 
 header {
     display: flex;
@@ -16,7 +19,7 @@ header {
     display: block;
     position: relative;
     top: 50px;
-    z-index: 21;
+    z-index: 31;
     -webkit-user-select: none;
     user-select: none;
 }
