@@ -33,21 +33,12 @@ export const SkillCard = ({
 							{heading}
 						</p>
 						<div
-							className="opacity-0 group-hover:opacity-100 group-hover:transfer group-hover:-translate-y-10 sm:group-hover:-translate-y-5
-						transition transform-opacity ease-in-out duration-500 text-slate-400 px-6 text-center text-xs sm:text-sm"
+							className="opacity-0 mt-[-110px] sm:mt-[-100px] group-hover:opacity-100 group-hover:mt-[-30px] sm:group-hover:mt-0 group-hover:transfer group-hover:-translate-y-2 sm:group-hover:-translate-y-5
+						transition transform-opacity ease-in duration-500 text-slate-400 px-6 text-center text-xs sm:text-sm"
 						>
 							{description}
 						</div>
 					</div>
-				</div>
-				<div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-1">
-					<Image
-						src="static/down-triangle.svg"
-						alt="arrow down"
-						className="fill-amber-200 text-amber-200"
-						width={32}
-						height={32}
-					/>
 				</div>
 			</div>
 		</div>
