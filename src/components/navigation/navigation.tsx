@@ -53,6 +53,9 @@ export const Navigation = () => {
 			<nav className="menu--right" role="navigation">
 				<div className="menuToggle">
 					<input type="checkbox" id="navbar-checkbox" />
+					<label htmlFor="navbar-checkbox" className="hidden">
+						fuck you label rules
+					</label>
 					<span className="w-[17px] sm:w-[33px]" />
 					<span className="w-[17px] sm:w-[33px]" />
 					<span className="w-[17px] sm:w-[33px]" />

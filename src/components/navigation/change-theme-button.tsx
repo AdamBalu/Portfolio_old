@@ -20,6 +20,7 @@ export const ChangeThemeButton = () => {
 	return (
 		<div>
 			<Button
+				name="change theme"
 				className="fixed left-5 z-30 top-10 px-4 py-2 font-semibold rounded-md"
 				onClick={() => {
 					setTheme(theme === 'light' ? 'dark' : 'light');

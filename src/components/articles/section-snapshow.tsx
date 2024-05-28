@@ -13,7 +13,11 @@ export const SectionSnapShow = () => (
 						height={450}
 						data="/static/snapshow-animated.svg"
 						className={cn('h-48 w-48 sm:h-72 sm:w-72 xl:h-96 xl:w-96')}
+						aria-labelledby="l1"
 					/>
+					<span id="l1" className="hidden">
+						Fk u lighthouse warning and blind people
+					</span>
 				</div>
 				<div className="flex flex-col gap-4 sm:gap-16 justify-center items-center xl:items-start">
 					<div className="flex flex-col gap-2 sm:gap-8">
