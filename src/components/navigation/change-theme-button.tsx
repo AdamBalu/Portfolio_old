@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import { Sun, Moon } from 'lucide-react';
+import { Button } from '@mui/base';
 
 export const ChangeThemeButton = () => {
 	const [mounted, setMounted] = useState(false);
@@ -18,7 +19,7 @@ export const ChangeThemeButton = () => {
 
 	return (
 		<div>
-			<button
+			<Button
 				className="fixed left-5 z-30 top-10 px-4 py-2 font-semibold rounded-md"
 				onClick={() => {
 					setTheme(theme === 'light' ? 'dark' : 'light');
@@ -32,7 +33,7 @@ export const ChangeThemeButton = () => {
 				) : (
 					<Sun className="hover:fill-primary-dark transition-transform hover:-rotate-[180deg] ease-in-out duration-1000" />
 				)}
-			</button>
+			</Button>
 		</div>
 	);
 };
