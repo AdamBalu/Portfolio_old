@@ -8,7 +8,7 @@ import Head from 'next/head';
 
 import { Providers } from './providers';
 
-const raleway = Raleway({ subsets: ['latin'], weight: ['400'] });
+const raleway = Raleway({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Adam Balušeskul - Portfolio'
@@ -30,6 +30,7 @@ const RootLayout = ({
 			/>
 			<meta name="msapplication-TileColor" content="#da532c" />
 			<meta name="theme-color" content="#ffffff" />
+			<meta name="description" content="Adam Balušeskul - My Portfolio" />
 		</Head>
 		<body
 			className={`min-h-screen flex flex-col ${raleway.className}  text-slate-700 dark:text-slate-200 transition-color duration-500 ease-in-out`}
