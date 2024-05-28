@@ -6,7 +6,8 @@ import { HeadingLine } from '@/components/hero/heading-line';
 import { HeadingAnnouncer } from '@/components/ui/heading-announcer';
 
 export const MainHeading = () => {
-	useEffect(() => dynamicHeadingsOpacity());
+	useEffect(() => dynamicHeadingsOpacity(), []);
+
 	return (
 		<div className="flex flex-col gap-4 items-center mt-12" id="main-heading">
 			<HeadingAnnouncer label="Hi, I am" />
@@ -43,16 +44,15 @@ const dynamicHeadingsOpacity = () => {
 	const h2 = document.getElementById('h-designer');
 	const h3 = document.getElementById('h-mobile');
 
-	changeColor(h1, 1000);
-	changeColor(h2, 3000);
-	changeColor(h3, 2000);
+	requestAnimationFrame(() => changeColor(h1, 1000));
+	requestAnimationFrame(() => changeColor(h2, 3000));
+	requestAnimationFrame(() => changeColor(h3, 2000));
 };
 
 const changeColor = (h: HTMLElement | null, timeout: number) => {
 	if (h === null) {
 		return;
 	}
-	h.classList.remove('opacity-0');
 
 	setTimeout(() => {
 		const span = h.querySelector('span');
