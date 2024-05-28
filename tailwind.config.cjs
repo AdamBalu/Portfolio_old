@@ -39,9 +39,9 @@ module.exports = {
         },
       },
       animation: {
-        slidein: "slidein 1s ease 300ms",
+        slideinSlow: "slidein 600ms ease 300ms",
+        slidein: "slidein 300ms ease 300ms",
       },
-
     }
   },
 

@@ -30,7 +30,11 @@ const RootLayout = ({
 			/>
 			<meta name="msapplication-TileColor" content="#da532c" />
 			<meta name="theme-color" content="#ffffff" />
-			<meta name="description" content="Adam Balušeskul - My Portfolio" />
+			<meta
+				name="description"
+				content="Adam Balušeskul - My Portfolio"
+				key="desc"
+			/>
 		</Head>
 		<body
 			className={`min-h-screen flex flex-col ${raleway.className}  text-slate-700 dark:text-slate-200 transition-color duration-500 ease-in-out`}
