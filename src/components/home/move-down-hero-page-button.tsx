@@ -13,7 +13,7 @@ export const MoveDownHeroPageButton = () => {
 			className="flex flex-row gap-1 sm:gap-3 px-3 sm:px-6 transition h-min max-w-56 mx-auto opacity-0"
 			onClick={() => scrollToSection('projects')}
 		>
-			<div className="flex items-center text-md sm:text-2xl h-min sm:h-16 gap-0">
+			<div className="flex items-center text-md sm:text-2xl h-min sm:h-12 gap-0">
 				Projects
 			</div>
 			<Image

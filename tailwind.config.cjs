@@ -26,24 +26,7 @@ module.exports = {
       fontFamily: {
         sigmarOne: ["Sigmar One", "sans-serif"],
       },
-      keyframes: {
-        slidein: {
-          from: {
-            opacity: "0",
-            transform: "translateY(-10px)",
-          },
-          to: {
-            opacity: "1",
-            transform: "translateY(0)",
-          },
-        },
-      },
-      animation: {
-        slideinSlow: "slidein 600ms ease 300ms",
-        slidein: "slidein 300ms ease 300ms",
-      },
     }
   },
-
   plugins: [require("daisyui")]
 };

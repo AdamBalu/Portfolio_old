@@ -12,7 +12,7 @@ export const HeadingLine = ({
 	id
 }: HeadingLineProps) => (
 	<h1
-		className={`text-2xl font-sigmarOne sm:text-5xl md:text-6xl xl:text-8xl font-bold animate-slideinSlow ${margin}`}
+		className={`text-2xl font-sigmarOne sm:text-5xl md:text-6xl xl:text-8xl font-bold ${margin}`}
 		id={id}
 	>
 		<span className="transition-color duration-500 ease-in-out">
