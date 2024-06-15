@@ -9,11 +9,12 @@ import { SectionSnapShow } from '@/components/articles/section-snapshow';
 import { SectionSkills } from '@/components/skills/section-skills';
 import { Socials } from '@/components/socials/socials';
 import Transition from '@/components/common/transition';
+import { SectionContact } from '@/components/contact/section-contact';
 
 const Page = async () => (
 	<>
 		<Header />
-		<main className="flex flex-col flex-grow pb-20 mt-10 xl:mt-0">
+		<main className="flex flex-col flex-grow mt-10 xl:mt-0">
 			<div id="homepage">
 				<Transition>
 					<div className="flex flex-col lg:mx-12 md:justify-start gap-10 h-screen  min-h-[500px] sm:min-h-[600px] md:min-h-[750px] mt-[3%]">
@@ -40,7 +41,7 @@ const Page = async () => (
 
 			<SectionSkills />
 
-			{/*<SectionContact />*/}
+			<SectionContact />
 		</main>
 		<Footer />
 	</>

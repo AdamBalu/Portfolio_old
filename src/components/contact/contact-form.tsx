@@ -26,10 +26,10 @@ export const ContactForm = () => {
 		}
 	});
 
-	const mutation = useSendEmailMutation();
+	const { mutate, isPending } = useSendEmailMutation();
 
 	const handleSubmit = (data: ContactFormSchema) => {
-		mutation.mutate(data, {
+		mutate(data, {
 			onSuccess: () => {
 				form.reset();
 				toast.success('Email sent successfully');
@@ -55,11 +55,20 @@ export const ContactForm = () => {
 				<FormTextArea
 					label="Message"
 					name="message"
-					placeholder="I'm yapping about..."
+					placeholder="I want to mention that..."
 					className="w-full min-h-48"
 				/>
-				<Button type="submit" className="mt-2">
-					Send
+				<Button type="submit" className="mt-2 flex items-center gap-2">
+					{!isPending && 'Send'}
+					{isPending && (
+						<div className="">
+							<div className="p-2 bg-gradient-to-tr animate-spin from-green-500 to-blue-500 via-purple-500 rounded-full">
+								<div className="bg-primary dark:bg-primary-dark rounded-full">
+									<div className="w-4 h-4 rounded-full" />
+								</div>
+							</div>
+						</div>
+					)}
 				</Button>
 			</form>
 		</FormProvider>

@@ -12,7 +12,7 @@ export const SectionFotosandrik = () => (
 				<h1 className="text-2xl sm:text-3xl md:text-7xl xl:text-9xl text-bold text-center font-sigmarOne">
 					Fotosandrik
 				</h1>
-				<div className="group p-[1.5rem] relative flex flex-end transition ease-out rounded-xl max-w-[900px] aspect-video duration-700 transform hover:translate-y-4 hover:before:opacity-50">
+				<div className="group p-[1.5rem] relative flex flex-end transition ease-out rounded-xl max-w-[800px] aspect-video duration-700 transform hover:translate-y-4 hover:before:opacity-50">
 					<Image
 						src="/static/wedding.webp"
 						alt="wedding picture"

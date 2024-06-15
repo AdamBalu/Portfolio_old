@@ -31,7 +31,7 @@ export const FormTextArea = ({
 			<textarea
 				id={name}
 				className={cn(
-					'input text-slate-700 input-bordered w-full min-h-20 py-2.5 border-gray-200 focus:border-primary bg-gray-50',
+					'input text-slate-700 input-bordered w-full dark:text-slate-200 min-h-20 py-2.5 border-gray-200 focus:border-primary bg-gray-50 focus:bg-gray-100 dark:bg-slate-800 focus:dark:bg-slate-700',
 					errors[name] && 'input-error',
 					className
 				)}

@@ -33,7 +33,7 @@ export const FormInput = ({
 			<input
 				id={name}
 				className={cn(
-					'input text-slate-700 input-bordered w-full border-gray-200 focus:border-primary bg-gray-50',
+					'input text-slate-700 dark:text-slate-200 input-bordered w-full border-gray-200 focus:border-primary bg-gray-50 focus:bg-gray-100 dark:bg-slate-800 focus:dark:bg-slate-700',
 					errors[name] && 'input-error',
 					className
 				)}

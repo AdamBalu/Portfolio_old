@@ -11,7 +11,7 @@ const RootLayout = ({
 	<>
 		<Header />
 		<main
-			className="container flex flex-col flex-grow pb-20 mt-10 px-3"
+			className="container flex flex-col flex-grow mt-10 px-3"
 			suppressHydrationWarning
 		>
 			{children}
