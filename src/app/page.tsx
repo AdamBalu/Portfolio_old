@@ -10,6 +10,7 @@ import { SectionSkills } from '@/components/skills/section-skills';
 import { Socials } from '@/components/socials/socials';
 import Transition from '@/components/common/transition';
 import { SectionContact } from '@/components/contact/section-contact';
+import { OtherProjects } from '@/components/projects/other-projects';
 
 const Page = async () => (
 	<>
@@ -31,6 +32,7 @@ const Page = async () => (
 
 			<div id="projects">
 				<ProjectsBox />
+				<OtherProjects />
 			</div>
 
 			<SectionDetoxRank />

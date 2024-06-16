@@ -7,7 +7,7 @@ import { HeadingAnnouncer } from '@/components/ui/heading-announcer';
 
 export const ProjectsBox = () => (
 	<div className="mx-auto max-w-[1400px]">
-		<div className="flex flex-col justify-center sm:h-screen  min-h-[500px] sm:min-h-[600px] md:min-h-[850px]">
+		<div className="flex flex-col justify-center min-h-[500px] sm:min-h-[600px] md:min-h-[850px]">
 			<HeadingAnnouncer label="My main" />
 			<h1 className="text-5xl md:text-7xl xl:text-9xl text-bold font-sigmarOne text-center mb-10">
 				Projects

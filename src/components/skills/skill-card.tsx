@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { type ReactNode } from 'react';
 
 import { Stars } from './stars';
 
 type SkillCardProps = {
 	iconSrc: string;
 	heading: string;
-	description: string;
+	description: ReactNode;
 	starCount: number;
 };
 
@@ -16,11 +16,11 @@ export const SkillCard = ({
 	description,
 	starCount
 }: SkillCardProps) => (
-	<div className="group w-full relative">
+	<div className="group w-[9rem] sm:w-[15rem] relative">
 		<div className="h-48 sm:h-64 group-hover:transition-height group-hover:ease-in-out group-hover:duration-500">
 			<div className="relative mb-5 bg-white dark:bg-secondary rounded-3xl h-26 group-hover:h-48 sm:group-hover:h-64 group-hover:transition-height group-hover:duration-700">
 				<div className="h-[9rem] w-[9rem] sm:h-[15rem] sm:w-[15rem] group-hover:h-52 sm:group-hover:h-64 transition-height ease-in-out duration-300 bg-white dark:bg-secondary border-[1px] group-hover:shadow-2xl group-hover:border-primary group-hover:dark:border-primary-dark border-slate-100 dark:border-slate-600 shadow-xl rounded-2xl relative z-10">
-					<div className="flex flex-col items-center pt-6 sm:pt-0 gap-4 sm:gap-2 py-1">
+					<div className="flex h-full flex-col items-center pt-6 sm:pt-0 gap-4 sm:gap-2 py-1">
 						<Stars count={starCount} />
 						<Image
 							src={iconSrc}
@@ -33,7 +33,7 @@ export const SkillCard = ({
 							{heading}
 						</p>
 						<div
-							className="opacity-0 mt-[-110px] sm:mt-[-100px] group-hover:opacity-100 group-hover:mt-[-30px] sm:group-hover:mt-0 group-hover:transfer group-hover:-translate-y-2 sm:group-hover:-translate-y-5
+							className="opacity-0 h-full mt-[-110px] sm:mt-[-100px] group-hover:opacity-100 group-hover:mt-[-30px] sm:group-hover:mt-0 group-hover:transfer group-hover:-translate-y-2 sm:group-hover:-translate-y-5
 						transition transform-opacity ease-in duration-500 text-slate-400 px-6 text-center text-xs sm:text-sm"
 						>
 							{description}
