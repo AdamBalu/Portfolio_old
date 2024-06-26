@@ -6,7 +6,7 @@ import {
 
 export const Stars = ({ count }: { count: number }) => (
 	<>
-		{count === 0 && <div className="flex justify-center w-full sm:pt-10" />}
+		{count === 0 && <div className="flex justify-center w-full sm:pt-4" />}
 		{count === 1 && (
 			<div className="flex justify-center w-full sm:pt-10">
 				<AnimatedStarCenter />

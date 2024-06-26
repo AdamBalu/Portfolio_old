@@ -10,6 +10,7 @@ export const OtherProjects = () => (
 			<SkillCard
 				iconSrc="/static/fancy-driller-logo.svg"
 				heading="Fancy Driller"
+				hasHeading
 				description={
 					<div className="flex flex-col gap-2 justify-center h-full items-center">
 						App built to make drilling and preparing for exams easier and more

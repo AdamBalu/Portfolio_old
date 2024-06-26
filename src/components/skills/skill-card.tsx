@@ -8,28 +8,39 @@ type SkillCardProps = {
 	heading: string;
 	description: ReactNode;
 	starCount: number;
+	hasHeading?: boolean;
 };
 
 export const SkillCard = ({
 	iconSrc,
 	heading,
 	description,
-	starCount
+	starCount,
+	hasHeading = false
 }: SkillCardProps) => (
 	<div className="group w-[9rem] sm:w-[15rem] relative">
 		<div className="h-48 sm:h-64 group-hover:transition-height group-hover:ease-in-out group-hover:duration-500">
 			<div className="relative mb-5 bg-white dark:bg-secondary rounded-3xl h-26 group-hover:h-48 sm:group-hover:h-64 group-hover:transition-height group-hover:duration-700">
 				<div className="h-[9rem] w-[9rem] sm:h-[15rem] sm:w-[15rem] group-hover:h-52 sm:group-hover:h-64 transition-height ease-in-out duration-300 bg-white dark:bg-secondary border-[1px] group-hover:shadow-2xl group-hover:border-primary group-hover:dark:border-primary-dark border-slate-100 dark:border-slate-600 shadow-xl rounded-2xl relative z-10">
-					<div className="flex h-full flex-col items-center pt-6 sm:pt-0 gap-4 sm:gap-2 py-1">
+					<div
+						className={`flex h-full flex-col items-center ${!hasHeading && 'pt-6'} group-hover:pt-6 sm:pt-0 gap-4 sm:gap-2 py-1`}
+					>
 						<Stars count={starCount} />
+						{hasHeading && (
+							<div className="visible pt-0 sm:pt-7 group-hover:hidden transition duration-200">
+								{heading}
+							</div>
+						)}
 						<Image
 							src={iconSrc}
 							alt="skill icon"
 							width={64}
 							height={64}
-							className="block group-hover:hidden sm:mt-7"
+							className="block group-hover:hidden md:mt-7"
 						/>
-						<p className="text-base sm:text-xl transition invisible group-hover:visible group-hover:duration-700 group-hover:-translate-y-7 group-hover:font-bold">
+						<p
+							className={`text-base ${hasHeading && 'pt-0 sm:pt-5'} sm:text-xl transition invisible group-hover:visible group-hover:duration-700 group-hover:-translate-y-7 group-hover:font-bold`}
+						>
 							{heading}
 						</p>
 						<div
